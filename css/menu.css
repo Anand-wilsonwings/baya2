@@ -1,0 +1,77 @@
+.left_menu{
+    background: var(--Bg);
+    width: 68px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.10);
+    z-index: 99;
+}
+
+.left_menu:hover{
+    width: 272px;
+    transition: 0.5s;
+}
+
+.left_menu:hover a h3{
+    display: block;
+    margin: 0;
+}
+
+.left_menu:hover a h4{
+    display: block;
+    margin: 0;
+}
+
+.left_menu a{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 0 12px 20px;
+    cursor: pointer;
+}
+
+.left_menu a.menu{
+    margin: 12px 0;
+}
+
+.left_menu a.menu:hover{
+    border-radius: 0px 12px 12px 0px;
+    background: rgba(255, 255, 255, 0.10);
+    margin-right: 16px;
+}
+
+.left_menu a h3{
+    color: var(--White);
+    font-size: var(--Font_16);
+    display: none;
+}
+
+.left_menu a h4{
+    color: var(--White);
+    font-size: var(--Font_14);
+    display: none;
+}
+
+svg{
+    fill: var(--White);
+}
+
+.left_menu .logo{
+    padding: 0 0 0 20px;
+    height: 72px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.setting{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    height: 72px;
+    padding: 0 0 0 20px !important;
+}
+

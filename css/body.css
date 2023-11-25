@@ -1,0 +1,359 @@
+.body{
+    margin-top: 72px;
+    margin-left: 68px;
+    background: var(--Lg_Bg);
+    padding: 20px;
+    height: calc(100vh - 72px);
+    overflow-y: auto;
+}
+
+.body::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* tabs section start  */
+.tabs_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs_div .left .nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.tabs_div .nav-link{
+    color: var(--B2);
+    font-size: var(--Font_14);
+    letter-spacing: 0.28px;
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 12px !important;
+    border: 1px solid var(--B3);
+    background: var(--Bg);
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link{
+    border: 1px solid var(--Blue) !important;
+    background: var(--Blue) !important;
+    color: var(--White);
+}
+
+.tabs_div .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tabs_div .right a img{
+    border: 1px solid var(--B2);
+    padding: 10px;
+}
+
+.tabs_div .right a:first-child img{
+    border-radius: 12px 0 0 12px;
+}
+
+.tabs_div .right a:last-child img{
+    border-radius: 0 12px 12px 0;
+    border-left: none;
+}
+/* tabs section end  */
+
+/* noc start  */
+.noc{
+    border-radius: 12px;
+    background: #11293B;
+    padding: 9px;
+    position: fixed;
+    bottom: 0;
+    left: 98px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.noc .left{
+    padding-right: 12px;
+    margin-right: 12px;
+    border-right: 2px solid var(--Blue3);
+}
+
+.noc .left h4{
+    color: var(--Blue);
+    font-size: var(--Font_14);
+    letter-spacing: 0.28px;
+    margin: 0;
+    border-radius: 12px;
+    border: 1px solid var(--Blue);
+    background: var(--Bg);
+    padding: 9px 12px;
+}
+
+.noc .right{
+    width: auto;
+    overflow: hidden;
+}
+
+.o_carousel .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    border-radius: 12px;
+    border: 1px solid #607D93;
+    background: #122839;
+}
+
+.o_carousel .item h4{
+    color: var(--B3);
+    font-size: var(--Font_14);
+    letter-spacing: 0.28px;
+    margin: 0;
+    width: max-content;
+}
+
+.o_carousel .item img{
+    width: 16px !important;
+    height: 16px;
+}
+
+.owl-theme .owl-dots{
+    display: none;
+}
+
+.no-js .owl-carousel, 
+.owl-carousel.owl-loaded{
+    padding: 0 36px;
+}
+
+.owl-theme .owl-nav{
+    margin: 0 !important;
+    /* position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    padding: 0 !important;
+}
+
+.owl-carousel .owl-nav .owl-next{
+    width: 24px;
+    height: 24px;
+    color: var(--B3);
+    margin: 0 !important;
+    position: absolute;
+    top: 5px;
+    right: 0;
+} 
+
+.owl-carousel .owl-nav .owl-prev{
+    width: 24px;
+    height: 24px;
+    color: var(--B3);
+    margin: 0 !important;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: none !important;
+}
+/* noc end  */
+
+
+
+
+
+/* filter start  */
+.delete_f{
+    width: 460px;
+    height: max-content !important;
+    border-radius: 24px;
+    background: var(--Bg) !important;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+}
+
+.delete_f .offcanvas-header{
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.delete_f .offcanvas-header h5{
+    color: var(--White);
+    font-size: var(--Font_16);
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.32px;
+}
+
+.delete_body{
+    overflow: hidden !important;
+    padding: 20px;
+}
+
+.delete_body p{
+    color: var(--White);
+    font-size: var(--Font_16);
+    letter-spacing: 0.32px;
+    margin: 0;
+}
+
+.delete_body h3{
+    margin: 20px 0 0;
+    color: var(--Green);
+    font-size: var(--Font_16);
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.delete_body .close_btn{
+    margin: 32px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.delete_body .close_btn a{
+    width: 100%;
+    text-align: center;
+}
+
+.delete_body .close_btn li{
+    color: var(--Lg_Blue);
+    font-size: var(--Font_16);
+    letter-spacing: 0.32px;
+    margin: 0;
+    width: 100%;
+    padding: 11px 0;
+    border-radius: 12px;
+    border: 1px solid var(--Lg_Blue);
+}
+
+.delete_body .close_btn a:last-child li{
+    background-color: var(--Blue);
+    color: var(--White);
+}
+
+/* sdafsa df  */
+.route_f{
+    width: 360px !important;
+    background: var(--Bg) !important;
+}
+
+.route_f .offcanvas-header{
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.route_f .offcanvas-header h5{
+    color: var(--White);
+    font-size: var(--Font_16);
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.32px;
+}
+
+.offcanvas_body{
+    padding: 20px;
+}
+
+.offcanvas_body .box1{
+    position: relative;
+}
+
+.offcanvas_body .box1 .box2 h4{
+    color: var(--White);
+    font-size: var(--Font_14);
+    margin: 0 0 8px 32px;
+    letter-spacing: 0.28px;
+}
+
+.box2 .select_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.offcanvas_body .box1 .box2 .dot{
+    width: 12px;
+    height: 12px;
+    background: var(--B3);
+    border-radius: 50%;
+}
+
+.select_box select{
+    width: 100%;
+    padding: 11px 16px;
+    color: #EEF9FF;
+    font-size: var(--Font_16);
+    letter-spacing: 0.32px;
+    border-radius: 8px;
+    border: 1.7px solid var(--B3);
+    background: #253C4E;
+}
+
+.offcanvas_body .box1 .dot2{
+    width: 2px;
+    height: 100px;
+    border-left: 4px dotted var(--B3);
+    position: absolute;
+    top: 50px;
+    left: 3px;
+    bottom: 0;
+}
+
+.r_f_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    bottom: 48px;
+    left: 52px;
+    right: 20px;
+}
+
+.r_f_buttons a{
+    width: 100%;
+    text-align: center;
+}
+
+.r_f_buttons a:first-child li{
+    background-color: var(--Blue);
+}
+
+.r_f_buttons a li{
+    color: var(--Lg_Blue);
+    font-size: var(--Font_16);
+    margin: 0;
+    letter-spacing: 0.32px;
+    border-radius: 12px;
+    border: 1px solid var(--Lg_Blue);
+    background: #19384F;
+    padding: 11px 0;
+}
+
+.range1{
+    margin: 37px 0 0 32px;
+}

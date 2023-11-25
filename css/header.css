@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px;
+    align-items: center;
+    border-bottom: 1px solid var(--border1);
+    background: var(--Bg);
+    height: 72px;
+    max-height: 72px;
+    position: fixed;
+    top: 0;
+    left: 68px;
+    right: 0;
+    z-index: 9;
+}
+
+header .left h2{
+    color: var(--White);
+    font-size: var(--Font_16);
+}
+
+header .right{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+header .right a{
+    color: var(--P_Color);
+    font-size: var(--Font_14);
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--P_Color);
+    background: var(--Lg_Blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+/* header .right a:hover{
+    background: linear-gradient(#03FF91, #03A2FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: 1px solid #03A2FF;
+} */

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Futural';
+    src: url('../font/FuturaLT.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Futural', sans-serif;
+}
+
+#lineChart{
+    font-family: 'Futural', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Futural', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none !important;
+    font-family: 'Futural', sans-serif;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+ul,
+li{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+:root{
+    --Lg_Bg: #0D2130;
+    --Bg: #080D26;
+    --White: #FFFFFF;
+    --border1: #20253B;
+    --P_Color: #1A1A1A;
+    --Bg_C: linear-gradient(#03FF91, #03A2FF);
+    --Gradient: linear-gradient(146deg, #03FF91 6.04%, #03A2FF 92.72%);
+
+    --Green: #01A66A;
+    --Purple: #820397;
+    --Red: #EE2929;
+    --Blue: #03A2FF;
+    --Lg_Blue: #D4EFFD;
+    --B2: #A0B4C3;
+    --B3: #607D93;
+    --Yellow: #D9B80A;
+    --Blue2: #355670;
+    --Blue3: #355770;
+
+    --Font_18: 1.125rem;
+    --Font_16: 1rem;
+    --Font_14: 0.875rem;
+    --Font_12: 0.75rem;
+}
